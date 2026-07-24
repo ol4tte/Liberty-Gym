@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liberty Gym Buin | Entrenamiento Guiado y Personalizado 5.0★</title>
+  <meta name="description" content="Liberty Gym en Buin. Acompañamiento permanente de entrenadores, ambiente acogedor y el mejor equipamiento. Carlos Condell 198, Buin. Reserva tu clase.">
+  <meta name="keywords" content="Liberty Gym, Gimnasio Buin, Entrenamiento Personalizado Buin, Gym Buin, Carlos Condell 198, Fitness Buin">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Liberty Gym Buin | Entrenamiento Guiado y Personalizado">
+  <meta property="og:description" content="Gimnasio con evaluación y entrenamiento 100% guiado. Tu salud y objetivos son nuestra prioridad en Buin.">
+  
+  <!-- Favicon / Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ExerciseGym",
+    "name": "Liberty Gym",
+    "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48",
+    "@id": "https://libertygym.cl",
+    "url": "https://instagram.com/libertygym_js",
+    "telephone": "+56996585310",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Carlos Condell 198",
+      "addressLocality": "Buin",
+      "addressRegion": "Región Metropolitana",
+      "postalCode": "9500000",
+      "addressCountry": "CL"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -33.7328,
+      "longitude": -70.7350
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "11"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "07:00",
+        "closes": "22:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "14:00"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">L</div>
+        <div class="logo-text">LIBERTY <span>GYM</span></div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="active">Inicio</a></li>
+        <li><a href="#diferencia">¿Por qué Liberty?</a></li>
+        <li><a href="#cotizador">Agendar Clase</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Ubicación</a></li>
+      </ul>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="#cotizador" class="btn btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.85rem;">
+          <i data-feather="calendar"></i> Clase de Prueba
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menú">
+          <i data-feather="menu"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <div class="hero-content">
+        <div class="badge-google">
+          <span class="stars">★★★★★</span>
+          <span><strong>5.0 / 5.0 en Google Maps</strong> (11 Opiniones Verificadas)</span>
+        </div>
+
+        <h1 class="gradient-text">EL GIMNASIO DONDE NUNCA ENTRENAS SOLO</h1>
+        
+        <p class="hero-subtitle">
+          A diferencia de las cadenas masivas, en <strong>Liberty Gym Buin</strong> cuentas con guía y corrección técnica permanente de nuestros entrenadores. Avance real, ambiente acogedor y máxima seguridad.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#cotizador" class="btn btn-primary">
+            <i data-feather="zap"></i> Agendar Clase Gratis por WhatsApp
+          </a>
+          <a href="https://www.instagram.com/libertygym_js/" target="_blank" rel="noopener" class="btn btn-outline">
+            <i data-feather="instagram"></i> Ver Instagram @libertygym_js
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h4>100%</h4>
+            <p>Guiado y Personalizado</p>
+          </div>
+          <div class="stat-item">
+            <h4>5.0 ★</h4>
+            <p>Satisfacción de Alumnos</p>
+          </div>
+          <div class="stat-item">
+            <h4>BUIN</h4>
+            <p>Carlos Condell 198</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ LIBERTY GYM (DIFERENCIADORES) -->
+  <section class="section" id="diferencia">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuestra Filosofía</span>
+        <h2 class="section-title">¿POR QUÉ ELEGIR LIBERTY GYM?</h2>
+        <p class="section-desc">Diseñamos una experiencia de entrenamiento donde tu salud, postura y resultados son la verdadera prioridad.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i data-feather="user-check"></i>
+          </div>
+          <h3>Guía Permanente</h3>
+          <p>Olvídate de estar perdido sin saber qué ejercicio hacer. Nuestros entrenadores siempre están a tu lado guiando tu rutina paso a paso.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i data-feather="shield-check"></i>
+          </div>
+          <h3>Corrección Técnica</h3>
+          <p>Cuidamos tu postura y técnica en cada repetición para prevenir lesiones y maximizar la efectividad de tu tiempo de entrenamiento.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i data-feather="smile"></i>
+          </div>
+          <h3>Excelente Ambiente</h3>
+          <p>Comunidad acogedora, cercana y de mucha buena vibra. Un espacio cómodo donde todos se apoyan sin prejuicios.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i data-feather="target"></i>
+          </div>
+          <h3>Enfoque en Objetivos</h3>
+          <p>Aumento de masa muscular, pérdida de grasa o salud física. Adaptamos cada plan a lo que tu cuerpo necesita.</p>
+        </div>
+      </div>
+
+      <!-- COMPARISON BOX -->
+      <div class="comparison-box">
+        <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.6rem;">LA DIFERENCIA LIBERTY VS CADENAS TRADICIONALES</h3>
+        <div class="comparison-grid">
+          <div class="comp-col chain">
+            <div class="comp-header">
+              <i data-feather="x-circle" style="color: #F87171;"></i>
+              <h4 style="font-size: 1.1rem; color: #CBD5E1;">Gimnasios de Cadena</h4>
+            </div>
+            <ul class="comp-list">
+              <li class="bad"><i data-feather="x" size="18"></i> Pagas mensualidad y nadie te orienta</li>
+              <li class="bad"><i data-feather="x" size="18"></i> Riesgo alto de lesiones por mala ejecución</li>
+              <li class="bad"><i data-feather="x" size="18"></i> Filas eternas para usar una máquina</li>
+              <li class="bad"><i data-feather="x" size="18"></i> Ambiente impersonal y desmotivante</li>
+            </ul>
+          </div>
+
+          <div class="comp-col liberty">
+            <div class="comp-header">
+              <i data-feather="check-circle" style="color: var(--accent);"></i>
+              <h4 style="font-size: 1.1rem; color: var(--accent);">Liberty Gym Buin</h4>
+            </div>
+            <ul class="comp-list">
+              <li class="good"><i data-feather="check" size="18"></i> Acompañamiento y rutina guiada siempre</li>
+              <li class="good"><i data-feather="check" size="18"></i> Supervisión postural para entrenar seguro</li>
+              <li class="good"><i data-feather="check" size="18"></i> Cupos cuidados y equipamiento de primer nivel</li>
+              <li class="good"><li class="good"><i data-feather="check" size="18"></i> Ambiente bacán, acogedor y motivador</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COTIZADOR E INTERACTIVO WHATSAPP -->
+  <section class="section calc-section" id="cotizador">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Agendamiento Directo</span>
+        <h2 class="section-title">PERSONALIZA TU PRIMERA CLASE</h2>
+        <p class="section-desc">Selecciona tu objetivo y disponibilidad para agendar tu evaluación con nuestro equipo vía WhatsApp.</p>
+      </div>
+
+      <div class="calc-card">
+        <div class="calc-form">
+          <div class="calc-step">
+            <label>1. ¿Cuál es tu objetivo principal?</label>
+            <div class="option-group">
+              <button class="option-btn selected" data-goal="Entrenamiento Personalizado Guiado">🎯 Entrenamiento Guiado</button>
+              <button class="option-btn" data-goal="Pérdida de Grasa y Tonificación">🔥 Pérdida de Grasa</button>
+              <button class="option-btn" data-goal="Ganancia Muscular y Fuerza">💪 Masa Muscular</button>
+              <button class="option-btn" data-goal="Salud, Postura y Condición">🌱 Salud & Postura</button>
+            </div>
+          </div>
+
+          <div class="calc-step">
+            <label>2. Horario de preferencia</label>
+            <div class="option-group">
+              <button class="option-btn selected" data-schedule="Mañana (07:00 a 12:00 hrs)">🌅 Mañana (7am - 12pm)</button>
+              <button class="option-btn" data-schedule="Tarde / Noche (15:00 a 22:00 hrs)">🌆 Tarde (3pm - 10pm)</button>
+              <button class="option-btn" data-schedule="Sábados por la mañana">⚡ Sábados (9am - 2pm)</button>
+              <button class="option-btn" data-schedule="Horario a coordinar">📅 A coordinar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="summary-box">
+          <div>
+            <div class="summary-header">
+              <span style="color: var(--accent); font-weight: 700; font-size: 0.85rem; text-transform: uppercase;">Resumen de tu solicitud</span>
+              <h3>CLASE DE EVALUACIÓN</h3>
+            </div>
+
+            <div class="summary-details">
+              <div class="detail-row">
+                <span>Modalidad:</span>
+                <span>Guiado 100%</span>
+              </div>
+              <div class="detail-row">
+                <span>Objetivo:</span>
+                <span id="summaryGoal">Entrenamiento Personalizado</span>
+              </div>
+              <div class="detail-row">
+                <span>Preferencia:</span>
+                <span id="summarySchedule">Mañana (7am - 12pm)</span>
+              </div>
+              <div class="detail-row">
+                <span>Ubicación:</span>
+                <span>Carlos Condell 198, Buin</span>
+              </div>
+            </div>
+          </div>
+
+          <a id="calcWaBtn" href="#" target="_blank" class="btn btn-whatsapp" style="width: 100%;">
+            <i data-feather="message-circle"></i> Solicitar Clase por WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RESEÑAS REALES GOOGLE MAPS -->
+  <section class="section" id="opiniones">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonios de Alumnos</span>
+        <h2 class="section-title">LO QUE DICEN NUESTROS MIEMBROS</h2>
+        <p class="section-desc">Opiniones 100% reales extraídas de nuestro perfil de Google Maps (Valoración 5.0 / 5.0).</p>
+      </div>
+
+      <div class="reviews-grid">
+
+        <div class="review-card">
+          <div>
+            <div class="review-user">
+              <div class="avatar-circle">DR</div>
+              <div class="user-info">
+                <h4>Danilo Roa</h4>
+                <p>4 opiniones · 1 foto en Google</p>
+              </div>
+            </div>
+            <div class="stars" style="margin-bottom: 0.8rem;">★★★★★</div>
+            <p class="review-text">
+              "Un gym con excelente ambiente y por supuesto que se diferencia ya que a diferencia de las cadenas de gym, aquí si tienes una guía permanente de los entrenadores que te permiten avanzar de acuerdo a tus objetivos. Siempre están preocupados de guiarte para que los ejercicios se realicen de la forma correcta."
+            </p>
+          </div>
+          <div class="verified-badge">
+            <i data-feather="check-circle" size="14"></i> Reseña verificada en Google Maps
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="review-user">
+              <div class="avatar-circle" style="background: linear-gradient(135deg, #38BDF8 0%, #818CF8 100%);">CG</div>
+              <div class="user-info">
+                <h4>Cecilia Gallardo Guerra</h4>
+                <p>2 opiniones en Google</p>
+              </div>
+            </div>
+            <div class="stars" style="margin-bottom: 0.8rem;">★★★★★</div>
+            <p class="review-text">
+              "Hacen un excelente trabajo personalizado con cada uno de nosotros de manera individual y personalizada, el ambiente es muy bcn y de mucha buena vibra. Me encanta estar ahí y saber que avanzo, cuido mi salud y estoy con el mejor equipo."
+            </p>
+          </div>
+          <div class="verified-badge">
+            <i data-feather="check-circle" size="14"></i> Reseña verificada en Google Maps
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="review-user">
+              <div class="avatar-circle" style="background: linear-gradient(135deg, #F472B6 0%, #FB7185 100%);">AG</div>
+              <div class="user-info">
+                <h4>Antonnella Gonzalez Jimenez</h4>
+                <p>3 opiniones · 1 foto en Google</p>
+              </div>
+            </div>
+            <div class="stars" style="margin-bottom: 0.8rem;">★★★★★</div>
+            <p class="review-text">
+              "Excelente ambiente y buena implementación. Es un lugar acogedor! Hay un buen acompañamiento en cada trabajo guiado para los ejercicios. Totalmente recomendable."
+            </p>
+          </div>
+          <div class="verified-badge">
+            <i data-feather="check-circle" size="14"></i> Reseña verificada en Google Maps
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA DE INSTALACIONES -->
+  <section class="section" id="galeria" style="background: rgba(255,255,255,0.01);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Conoce el Lugar</span>
+        <h2 class="section-title">NUESTROS ESPACIOS</h2>
+        <p class="section-desc">Equipamiento moderno, zona de peso libre y el mejor ambiente de entrenamiento en Buin.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" alt="Entrenamiento Guiado Liberty Gym">
+          <div class="gallery-overlay">
+            <span>Guía y Corrección Personalizada</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=80" alt="Zona de Pesas Libres y Fuerza">
+          <div class="gallery-overlay">
+            <span>Zona de Fuerza & Pesas Libres</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80" alt="Maquinaria de Primer Nivel">
+          <div class="gallery-overlay">
+            <span>Maquinaria & Equipamiento</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HORARIOS E INFORMACIÓN EN VIVO -->
+  <section class="section">
+    <div class="container">
+      <div class="info-box">
+        <div>
+          <span class="section-tag">Estado en Tiempo Real</span>
+          <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">HORARIOS DE ATENCIÓN</h2>
+          <div id="liveStatus" class="status-badge open">
+            <span class="pulse-dot"></span> Verificando horario...
+          </div>
+          
+          <table class="hours-table">
+            <tr>
+              <td>Lunes a Viernes</td>
+              <td>07:00 a.m. - 10:00 p.m.</td>
+            </tr>
+            <tr>
+              <td>Sábados</td>
+              <td>09:00 a.m. - 02:00 p.m.</td>
+            </tr>
+            <tr>
+              <td>Domingos y Festivos</td>
+              <td>Cerrado (Descanso)</td>
+            </tr>
+          </table>
+        </div>
+
+        <div style="display: flex; flex-direction: column; justify-content: center; background: rgba(255,255,255,0.02); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+          <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: var(--accent);">🔥 Horarios de Mayor Concurrencia</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+            Nuestras horas punta son habitualmente entre las 18:00 y las 20:30 hrs. Si prefieres entrenar con menor afluencia, te recomendamos los bloques de mañana (07:00 a 11:00 hrs) o primera tarde (14:00 a 17:00 hrs).
+          </p>
+          <a href="#cotizador" class="btn btn-outline" style="align-self: flex-start;">
+            <i data-feather="clock"></i> Consultar Disponibilidad de Cupos
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA & CONTACTO -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">¿Cómo Llegar?</span>
+        <h2 class="section-title">UBICACIÓN Y CONTACTO</h2>
+        <p class="section-desc">Estamos ubicados en pleno centro de Buin. Visítanos o escríbenos directamente.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div>
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i data-feather="map-pin"></i>
+              </div>
+              <div>
+                <h4 style="font-size: 1rem; text-transform: none;">Dirección</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Carlos Condell 198, 9500000 Buin, Región Metropolitana, Chile</p>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Plus Code: 7796+6M Buin</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i data-feather="phone"></i>
+              </div>
+              <div>
+                <h4 style="font-size: 1rem; text-transform: none;">Teléfono / WhatsApp</h4>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">+56 9 9658 5310</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i data-feather="instagram"></i>
+              </div>
+              <div>
+                <h4 style="font-size: 1rem; text-transform: none;">Instagram Oficial</h4>
+                <a href="https://www.instagram.com/libertygym_js/" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: none; font-weight: 600;">@libertygym_js</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="https://maps.google.com/?q=Carlos+Condell+198+Buin" target="_blank" class="btn btn-primary" style="flex: 1;">
+              <i data-feather="navigation"></i> Abrir en Google Maps
+            </a>
+            <a href="https://wa.me/56996585310" target="_blank" class="btn btn-whatsapp">
+              <i data-feather="message-circle"></i> Chat WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.467883907727!2d-70.73718882429853!3d-33.7328003732788!2m3!1f0!f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966324d2d46e96bb%3A0x86b0a7edee8d8d7e!2sCarlos%20Condell%20198%2C%20Buin%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1700000000000!5m2!1ses!2scl" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/56996585310?text=Hola%20Liberty%20Gym,%20deseo%20consultar%20por%20sus%20planes%20y%20entrenamiento%20guiado." target="_blank" rel="noopener" class="floating-wa" aria-label="Contacto por WhatsApp">
+    <i data-feather="message-circle"></i>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon">L</div>
+            <div class="logo-text">LIBERTY <span>GYM</span></div>
+          </div>
+          <p>Tu centro de entrenamiento 100% guiado en Buin. Acompañamiento constante, salud y buena vibra.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#diferencia">Diferenciadores</a></li>
+            <li><a href="#cotizador">Agendar Clase</a></li>
+            <li><a href="#opiniones">Opiniones Google</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Contacto</h4>
+          <ul>
+            <li>Carlos Condell 198, Buin</li>
+            <li>Tel: +56 9 9658 5310</li>
+            <li><a href="https://www.instagram.com/libertygym_js/" target="_blank">Instagram: @libertygym_js</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Liberty Gym Buin. Todos los derechos reservados. Evaluación y entrenamiento personalizado.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>
